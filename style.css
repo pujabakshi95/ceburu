@@ -125,7 +125,7 @@ nav {
   border-radius: 50px;
   overflow: hidden;
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: all 0.3s ;
   font-size:15px;
   text-transform: capitalize;
 
