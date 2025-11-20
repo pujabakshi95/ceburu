@@ -201,7 +201,7 @@ BANNER SECTION
 
 .hero-section {
   min-height: 100vh;
-  background: url("../assets/hero-background-animated.gif") no-repeat
+  background: url("https://github.com/pujabakshi95/ceburu/releases/download/v1.0.0/hero-background-animated.gif") no-repeat
     center/cover;
   display: flex;
   justify-content: center;
