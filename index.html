@@ -1,114 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceburu</title>
 
-    <!-- Google Font -->
-    <link
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-9e+ASvnDZSWmP4C3K6npLxZ7KHeu8fZbmVZrNhxZ8GvYjoTgJbXQwOx6x4h6PzFqL8HvwT0C/2z1v6WqRdlFQw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-  <body>
-    <!-- Header -->
+<body>
+    <!-- Header Section -->
     <header>
-      <div class="container">
-        <nav>
-          <div class="nav-logo">
-            <a class="navbar-brand" href="">
-              <img src="./assets/nav1.png" alt="Caburu Logo" />
-            </a>
-          </div>
+        <div class="main-wrapper">
+            <nav>
+                <div class="brand-logo-wrapper">
+                    <a href="./index.html" class="brand-link">
+                        <img src="./assets/brand-main-logo.png" alt="">
+                    </a>
+                </div>
 
-          <input type="checkbox" id="menu" hidden />
-          <label class="menu-bar" for="menu"><span></span></label>
-
-          <div class="navbar-collapsed">
-            <ul>
-              <li><a class="nav-link active" href="">Home</a></li>
-              <li><a class="nav-link" href="">About Us</a></li>
-              <li><a class="nav-link" href="">Services</a></li>
-              <li><a class="nav-link" href="">Blog</a></li>
-              <li><a class="nav-link" href="">FAQ</a></li>
-              <li><a class="nav-link" href="">Case Studies</a></li>
-            </ul>
-
-            <div class="navbar-btn">
-              <a class="log-in-btn" href="">
-                <i class="fa-regular fa-user"></i>
-                <span>Login/Register</span>
-              </a>
-              <a class="primary-btn" href="">
-                <span>Contact Us</span>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
+                <div class="navigation-actions mobile-nav-actions">
+                    <a class="auth-link-btn" href="">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login/Register</span>
+                    </a>
+                    <a class="btn-action-primary" href="">
+                        <span class="mobile-call-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+                
+                <input hidden type="checkbox" name="menu" id="menu">
+                <label class="mobile-menu-toggle" for="menu">
+                    <span></span>
+                </label>
+                <div class="nav-menu-container">
+                    <ul>
+                        <li class="menu-list-item">
+                            <a class="menu-link active" href="">Home</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" href="">About Us</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" href="">Services</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" href="">Blog</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" href="">FAQ</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" href="">Case Studies</a>
+                        </li>
+                    </ul>
+                    <div class="navigation-actions">
+                        <a class="auth-link-btn" href="">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Login/Register</span>
+                        </a>
+                        <a class="btn-action-primary" href="">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Banner Section -->
-    <section class="banner-section">
-      <div class="container">
-        <div class="banner-wrpr">
-          <h1 class="tittle-1">
-            Your Complete IT Management Solution
-          </h1>
-          <p>
-            Transforming IT Operations with Advanced AI-Powered Remote
-            Monitoring and Management for Your IT Infrastructure.
-          </p>
-          <div class="banner-btn">
-            <a href="" class="primary-btn"><span>Get Started</span></a>
-            <a href="" class="primary-btn outline"><span>Request a Demo</span></a>
-          </div>
+    <section class="hero-section">
+        <div class="main-wrapper">
+            <div class="hero-content-wrapper">
+                <h1 class="heading-hero">Your Complete IT Management Solution</h1>
+                <p>
+                    Transforming IT Operations with Advanced AI-Powered Remote Monitoring and Management for Your IT
+                    Infrastructure.
+                </p>
+                <div class="hero-action-buttons">
+                    <a class="btn-action-secondary" href="">
+                        <span>get started</span>
+                    </a>
+                    <a class="btn-action-primary" href="">
+                        <span>request a demo</span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- support Section -->
-     <section class="suprt-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-50">
-            <div class="suprt-img">
-              <img src="assets/Mask group.png" alt="">
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="suprt-cnter">
-              <div class="subtitle">Fueled by Integration</div>
-              <h2>Over 900 Integrations Supported</h2>
-              <p>Seamless integration with Ceburu—connect your favorite tools, anywhere, anytime.
-                <br />
-                <br />
-              Managed or self-directed, you decide. Whether you prefer guided automation or complete control, Ceburu adapts to your needs—allowing you to monitor, optimize, and secure your IT infrastructure the way you want.
-              </p>
-              <a href="" class="secondry-btn">
-                <span>explore integrations</span>
-              </a>
 
+    <!--MAIN SECTION-->
+    <section class="main-sec">
+        <div class="container">
+            <div class="ceburu-overview-part">
+                <h2 class="title2">Lorem Ipsum</h2>
+                <h1 class="title3">Ceburu <span>Overview</span></h1>
+                <p class="para">A comprehensive all-in-one IT management platform designed to streamline and optimize your IT
+                    operations. With powerful features and advanced capabilities, Ceburu empowers businesses to
+                    efficiently manage their IT infrastructure, enhance performance, and ensure the security of their
+                    systems. Explore our main categories below to discover how Ceburu can revolutionize your IT
+                    management.
+                </p>
             </div>
-          </div>
-
         </div>
+    </section>
 
-      </div>
-     </section>
-    
-    
-  </body>
+    <!-- Support Section -->
+    <section class="integration-section">
+        <div class="main-wrapper">
+            <div class="flex-container integration-flex-row">
+                <div class="grid-item-half">
+                    <div class="integration-image-wrapper">
+                        <img src="./assets/integration-showcase-image.png" alt="">
+                    </div>
+                </div>
+                <div class="grid-item-half">
+                    <div class="integration-text-content">
+                        <div class="section-label">Fueled by Integration</div>
+                        <h2 class="heading-main">Over 900 Integrations Supported</h2>
+                        <p>
+                            Seamless integration with Ceburu—connect your favorite tools, anywhere, anytime.
+                            <br /><br />
+                            Managed or self-directed, you decide. Whether you prefer guided automation or complete
+                            control, Ceburu adapts to your needs—allowing you to monitor, optimize, and secure your IT
+                            infrastructure the way you want.
+                        </p>
+                        <a class="btn-action-secondary" href="">
+                            <span>explore integrations</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who we are Section -->
+    <section class="about-section">
+        <div class="main-wrapper">
+            <div class="about-header-wrapper">
+                <div class="section-label">About Us</div>
+                <h2 class="heading-main">Who We Are, What We Do, and Why</h2>
+            </div>
+            <p>
+                At Ceburu, we are leaders in AI Ops by providing advanced AI-driven remote monitoring and management
+                solutions for businesses of all sizes. With our cutting-edge platform, we empower organizations to
+                optimize their IT infrastructure, enhance network performance, and ensure the security and stability of
+                their systems.
+            </p>
+            <a href="" class="btn-action-primary">
+                <span>Read More</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="video-showcase-section">
+        <div class="main-wrapper">
+            <div class="showcase-text-content">
+                <h2 class="heading-main">Lorem Ipsum is Simply</h2>
+                <p>
+                    Our superpower is using internal and external data sets to create better visibility into performance
+                    and
+                    opportunities. By delivering those insights in a digestible format, we help create executive
+                    alignment,
+                    and relieve friction between franchisors and franchisees.
+                </p>
+            </div>
+            <div class="showcase-media-wrapper">
+                <div class="media-background-container">
+                    <img src="./assets/video-showcase-thumbnail.png" alt="">
+                    <a href="">
+                        <img src="./assets/video-play-button-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ceburu Feature Section -->
+    <section class="features-section">
+        <div class="main-wrapper">
+            <div class="flex-container features-flex-row">
+                <div class="grid-item-half">
+                    <div class="features-image-wrapper">
+                        <img src="./assets/features-showcase-image.png" alt="">
+                    </div>
+                </div>
+                <div class="grid-item-half">
+                    <div class="features-text-content">
+                        <div class="section-label">lorem ipsum</div>
+                        <h2 class="heading-main">Ceburu Features</h2>
+                        <p>
+                            "EVERYTHING. ALL THE TIME." It's more than a slogan. Powered by AI and fueled by
+                            integration,
+                            Ceburu hosts the world's leading suite of RMM software tools that delivers stability,
+                            security,
+                            and simplicity.
+                        </p>
+                        <div class="flex-container features-list-grid">
+                            <div class="grid-item-half">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>IT Management</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Backup Manageemnt</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Performance Monitoring</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>AI Monitoring</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>AI Ops</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Report</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid-item-half">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Remote Connect</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Alarms & Connect</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Asset Management</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Full Stack Observability</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./assets/list-checkmark-icon.png" alt="">
+                                            <span>Network Performance</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn-action-secondary" href="">
+                            <span>explore integrations</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR CLIENT SECTION -->
+    <section class="partners-section">
+        <div class="main-wrapper">
+            <div class="section-label">OUR CLENTS</div>
+            <div class="flex-container partners-logo-container">
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-acordis-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-palm-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-oyc-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-arnet-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-nicklaus-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item-small">
+                    <a href="">
+                        <img src="./assets/partner-bigbrothers-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="site-footer">
+        <div class="main-wrapper">
+            <div class="footer-cta-section">
+                <div class="footer-cta-text">
+                    <h2 class="heading-main">Get In Touch</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the.
+                    </p>
+                </div>
+                <div class="footer-cta-action">
+                    <a href="" class="btn-action-secondary">
+                        <span>Get Started</span>
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-navigation">
+                <a class="footer-brand-logo" href="">
+                    <img src="./assets/brand-footer-logo.png" alt="">
+                </a>
+                <ul>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">Home
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">About Us
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">Services
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">Blog
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">Contact Us
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">FAQ
+                            <img src="./assets/footer-nav-separator.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link" href="">Case Studies</a>
+                    </li>
+                </ul>
+                <div class="social-media-links">
+                    <a class="social-icon-link" href="">
+                        <img src="./assets/social-facebook-icon.png" alt="">
+                    </a>
+                    <a class="social-icon-link" href="">
+                        <img src="./assets/social-instagram-icon.png" alt="">
+                    </a>
+                    <a class="social-icon-link" href="">
+                        <img src="./assets/social-x-icon.png" alt="">
+                    </a>
+                    <a class="social-icon-link" href="">
+                        <img src="./assets/social-linkedin-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>
+                        © 2025 <a href="">Ceburu.</a> All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
